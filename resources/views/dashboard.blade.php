@@ -26,23 +26,23 @@
 
                         </div>
                         <form action="{{ route('new-donation') }}" method="POST"
-                            class="mt-8 py-3 px-2 bg-indigo-50 rounded-md md:flex space-y-3 md:space-x-4">
+                            class="mt-8 py-3 px-2 bg-blue-50 rounded-md md:flex space-y-3 md:space-x-4">
                             @csrf
 
 
                             <input type="text" name="donor" id="donor" placeholder="Name"
                                 autocomplete="given-name"
-                                class="focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-1/3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                class="focus:ring-blue-500 focus:border-blue-500 block w-full md:w-1/3 shadow-sm sm:text-sm border-gray-300 rounded-md">
 
 
 
                             <input type="number" name="amount" id="amount" placeholder="Amount ($)"
                                 autocomplete="off"
-                                class="focus:ring-indigo-500 w-full focus:border-indigo-500 block md:w-1/3 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                class="focus:ring-blue-500 w-full focus:border-blue-500 block md:w-1/3 shadow-sm sm:text-sm border-gray-300 rounded-md">
 
 
                             <button type="submit"
-                                class=" rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Add
+                                class=" rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Add
                                 Donation</button>
                         </form>
                         <div class="mt-8 flex flex-col">
@@ -81,7 +81,7 @@
                                                         <td
                                                             class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                                             <a href="#"
-                                                                class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                                                class="text-blue-600 hover:text-blue-900">Edit</a>
                                                         </td>
                                                     </tr>
                                                 @endforeach
