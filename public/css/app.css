@@ -1145,6 +1145,12 @@ select {
 .-ml-px {
   margin-left: -1px;
 }
+.-mt-20 {
+  margin-top: -5rem;
+}
+.-mt-10 {
+  margin-top: -2.5rem;
+}
 .block {
   display: block;
 }
@@ -2070,6 +2076,10 @@ select {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-1\/3 {

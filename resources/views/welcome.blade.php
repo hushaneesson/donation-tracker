@@ -2,7 +2,7 @@
     <img src="{{ asset('img/banner.png') }}" alt="background" class="object-cover w-full" />
     <div class="h-screen ">
         @if (Route::has('login'))
-            <div class="absolute hidden float-right px-6 py-4 right-2 top-2 sm:block">
+            <div class="absolute float-right px-6 py-4 right-2 top-2 sm:block">
                 @auth
                     <a href="{{ url('/dashboard') }}"
                         class="px-4 py-2 text-sm font-bold bg-white border rounded-md text-sky-600 border-sky-600">Dashboard</a>
@@ -15,11 +15,11 @@
             </div>
         @endif
 
-        <div class="p-2 space-y-10 md:p-8 md:-mt-20 lg:-mt-32">
+        <div class="p-2 -mt-10 space-y-10 md:p-8 md:-mt-20 lg:-mt-32">
 
             <h1 class="text-3xl font-bold text-center text-sky-800 md:text-6xl">Duff's Back to School Fundraiser</h1>
 
-            <div class="p-8 chart-wrapper">
+            <div class="w-full p-8 overflow-x-auto chart-wrapper">
                 <ul class="font-medium chart-y">
                     <li>$40,000</li>
                     <li>$30,000</li>
@@ -32,7 +32,7 @@
                     <li id="bar" data-year=""></li>
                 </ul>
 
-                <div class="flex items-center justify-center h-full text-2xl">
+                <div class="items-center justify-center hidden h-full text-2xl md:flex">
                     <div>
                         <div>Total Received </div>
                         <div class="text-3xl font-bold text-sky-800 md:text-5xl">${{ number_format($total, 2) }}
@@ -40,6 +40,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="flex items-center justify-center h-full text-2xl md:hidden">
+                    <div>
+                        <div>Total Received </div>
+                        <div class="text-3xl font-bold text-sky-800 md:text-5xl">${{ number_format($total, 2) }}
+                        </div>
+                    </div>
+                </div>
 
         </div>
 
