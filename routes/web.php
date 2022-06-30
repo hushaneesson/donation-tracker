@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DonationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [DonationController::class, 'home']);
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [DonationController::class, 'index'])->name('dashboard');
+    Route::post('/donations', [DonationController::class, 'store'])->name('new-donation');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+
+require __DIR__ . '/auth.php';
