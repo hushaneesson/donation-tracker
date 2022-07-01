@@ -30,7 +30,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .chart-wrapper .chart-y {
   display: grid;
-  grid-row-gap: 3rem;
+  grid-row-gap: 0.125%;
 }
 
 

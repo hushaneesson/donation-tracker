@@ -23,12 +23,15 @@
                 <ul class="font-medium chart-y">
                     <li>$40,000</li>
                     <li>$30,000</li>
+                    <li>$25,000</li>
                     <li>$20,000</li>
+                    <li>$15,000</li>
                     <li>$10,000</li>
                     <li>$5,000</li>
-                    <li>$0</li>
+                    {{-- <li>$0</li> --}}
                 </ul>
-                <ul class="chart-x">
+
+                <ul class="h-96 chart-x">
                     <li id="bar" data-year=""></li>
                 </ul>
 
