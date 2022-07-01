@@ -6,10 +6,10 @@
                 @auth
                     <a href="{{ url('/dashboard') }}"
                         class="px-4 py-2 text-sm font-bold bg-white border rounded-md text-sky-600 border-sky-600">Dashboard</a>
-                @else
+              {{--  @else
                     <a href="{{ route('login') }}"
                         class="px-4 py-2 text-sm font-bold bg-white border rounded-md text-sky-600 border-sky-600">Log
-                        in</a>
+                        in</a>  --}}
 
                 @endauth
             </div>
